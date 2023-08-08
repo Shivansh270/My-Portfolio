@@ -1,0 +1,30 @@
+/* Home.css */
+
+.home {
+    position: absolute;
+    top: 12vw;
+    left: 6vw;
+  }
+  
+  .home h1 {
+    font-size: 8vw;
+    font-weight: 300;
+    margin-left: 6vw;
+    transform-origin: left;
+  }
+  
+  .home h2 {
+    font-size: 8vw;
+    font-weight: 300;
+    transform-origin: left;
+    margin-left: 26vw;
+  }
+  
+.video {
+    width: 60%;
+    margin-top: 40vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
