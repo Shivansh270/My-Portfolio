@@ -1,11 +1,32 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import './About.css';
-
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const About = () => {
+  const aboutRef = useRef(null);
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const tl2 = gsap.timeline({
+      scrollTrigger: {
+        trigger: "home h1",
+        scroller: "body",
+        start: "top -115%",
+        end: "top -120%",
+        scrub: 3
+      }
+    });
+
+    tl2.to(".main", {
+      backgroundColor: "#fff"
+    });
+  }, []);
+
   return (
-    <div className="page2">
-      <h1>Let me introduce,</h1>
+    <div ref={aboutRef}>
+      <h1 className='page2-h1'>Let me introduce,</h1>
       <div className="page2-container">
         <div className="page2-left">
           <p>
@@ -18,7 +39,7 @@ const About = () => {
         </div>
         <div className="page2-right">
           <img
-            src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.sectorlink.com%2Fimg%2Fblog%2Fweb-devel-important.jpg&tbnid=ozVFXHcKs2AjAM&vet=12ahUKEwiUkpHCycyAAxVToekKHZCPDA0QMygWegUIARCfAg..i&imgrefurl=https%3A%2F%2Fwww.sectorlink.com%2Farticle%2Fwhy-finding-the-right-web-developer-matters-importance-of-web-development&docid=R-Qy6_3hEvibFM&w=553&h=311&q=web%20developer&ved=2ahUKEwiUkpHCycyAAxVToekKHZCPDA0QMygWegUIARCfAg"
+            src="image.jpg"
             alt="About us"
           />
         </div>

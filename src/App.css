@@ -11,13 +11,24 @@ html,
 body {
   height: 100%;
   width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.main{
   background-color: #0f0d0d;
 }
 
-
-.page1 {
-  min-height: 100vh;
+.page1 { 
   width: 100%;
+  min-height: 100vh;
 }
 
+.page2{
+  width: 100%;
+  padding: 100px 5vw;
+  border-bottom: 2px solid #6c6c6c;
+  position: relative;
+  z-index: 9;
+} 
 

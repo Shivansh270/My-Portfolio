@@ -1,31 +1,19 @@
-.page2{
-    min-height: 80vh;
-    width: 100%;
-    padding: 100px 5vw;
-    border-bottom: 2px solid #6c6c6c;
-    position: relative;
-    z-index: 9;
-}
-
-.page2 h1{
+.page2-h1{
     font-size:7vw;
     font-weight: 500;
-    /* color: #111; */
-    color: aqua;
+    color: #111;
 }
 
 .page2-container{
     height: 60vh;
     width: 100%;
-    background-color: red;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* padding: 0 5vw; */
 }
 
 .page2-left{
-    /* background-color: blue; */
+    color: #111;
     width: 40%;
 }
 
