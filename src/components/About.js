@@ -22,6 +22,21 @@ const About = () => {
     tl2.to(".main", {
       backgroundColor: "#fff"
     });
+
+    const tlText = gsap.timeline({
+      scrollTrigger: {
+        trigger: aboutRef.current,
+        start: "top center",
+      }
+    });
+
+    tlText.from(".page2-h1, .page2-left p, .page2-left button", {
+      opacity: 0,
+      y: 60,
+      duration: 1,
+      stagger: 0.4,
+      ease: "power3.out"
+    });
   }, []);
 
   return (

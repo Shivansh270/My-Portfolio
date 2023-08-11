@@ -21,10 +21,9 @@
   }
   
 .video {
-    width: 60%;
+    width: 50%;
     margin-top: 40vw;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
   }
-  
