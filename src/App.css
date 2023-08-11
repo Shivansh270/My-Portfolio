@@ -15,17 +15,18 @@ body {
   padding: 0;
 }
 
-/* .cursor{
-  position: fixed;
-  width: 20px;
+.cursor{
   height: 20px;
-  background-color: #000;
+  width: 20px;
   border-radius: 50%;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
+  position: fixed;
+  background-color: #EDBFFF;
+  z-index: 8;
+  transition: background-image ease 0.5s;
+  background-position: center;
+  background-size:cover ;
   mix-blend-mode: difference;
-  z-index: 9999;
-} */
+}
 
 .main{
   background-color: #0f0d0d;
@@ -34,6 +35,7 @@ body {
 .page1 { 
   width: 100%;
   min-height: 100vh;
+  z-index: 9;
 }
 
 .page2{ 
@@ -46,10 +48,11 @@ body {
 } 
 
 .page3{
-  min-height: 150vh;
+  min-height: 100vh;
   width: 100%;
   padding-top: 100px;
   padding: 100px 5vw;
   position: relative;
+  border-bottom: 2px solid #6c6c6c;
   z-index: 9;
 }

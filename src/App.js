@@ -4,7 +4,7 @@ import './App.css';
 import Home from './components/Home';
 import About from './components/About';
 import Projects from './components/Projects';
-// import CustomCursor from './components/customCursor';
+import CustomCursor from './components/customCursor';
 import LocomotiveScroll from 'locomotive-scroll';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -25,7 +25,7 @@ const App = () => {
   
   return (
     <div className="main">
-      
+      <CustomCursor/>
       <div className="page1">
         <Navbar />
         <Home />
