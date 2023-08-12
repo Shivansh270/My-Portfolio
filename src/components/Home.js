@@ -4,6 +4,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const Home = () => {
+  const homeRef = useRef(null)
   const h1Ref = useRef(null);
   const h2Ref = useRef(null);
   const videoRef = useRef(null);
@@ -22,19 +23,34 @@ const Home = () => {
 
     tl.to(h1Ref.current, {
       x: -100,
-    }, "anim");
+    }, "animation");
 
     tl.to(h2Ref.current, {
       x: 100,
-    }, "anim");
+    }, "animation");
 
     tl.to(videoRef.current, {
       width: "90%",
-    }, "anim");
+    }, "animation");
+
+    const tlHome = gsap.timeline({
+      scrollTrigger: {
+        trigger: homeRef.current,
+        start: "top center",
+      }
+    });
+
+    tlHome.from(".home h1, .home h2", {
+      opacity: 0,
+      y: 60,
+      duration: 1,
+      stagger: 0.4,
+      ease: "power3.out"
+    });
   }, []);
 
   return (
-  <div>
+  <div ref={homeRef}>
     <div className='home'>
       <h1 ref={h1Ref}>Shivansh gupta</h1>
       <h2 ref={h2Ref}>web developer</h2>

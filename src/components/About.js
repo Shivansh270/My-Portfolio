@@ -22,7 +22,7 @@ const About = () => {
     tl2.to(".main", {
       backgroundColor: "#fff"
     });
-
+  
     const tlText = gsap.timeline({
       scrollTrigger: {
         trigger: aboutRef.current,
@@ -30,7 +30,7 @@ const About = () => {
       }
     });
 
-    tlText.from(".page2-h1, .page2-left p, .page2-left button", {
+    tlText.from(".page2-h1, .page2-right p, .page2-left h2, .page2-right button", {
       opacity: 0,
       y: 60,
       duration: 1,
@@ -44,19 +44,19 @@ const About = () => {
       <h1 className='page2-h1'>Let me introduce,</h1>
       <div className="page2-container">
         <div className="page2-left">
-          <p>
-            We weave together bold strategy and creative execution to produce
-            thought-provoking digital experiences. We take a highly personalized
-            approach to delivering branding, web design, and content marketing
-            solutions. Born in the DC area - now serving clients worldwide.
-          </p>
-          <button>Download</button>
+          <h2>
+          "TRANSFORMING
+          VISIONS<br></br>
+          INTO<br></br>
+          CODE-DRIVEN
+          INTERACTION"
+          </h2>
         </div>
         <div className="page2-right">
-          <img
-            src="image.jpg"
-            alt="About us"
-          />
+          <p>We weave together bold strategy and creative execution to produce thought-provoking digital
+            experiences. We take a highly personalized approach to delivering branding, web design, and
+            content marketing solutions. Born in the DC area - now serving clients worldwide.</p>
+          <button>Download</button>
         </div>
       </div>
     </div>
