@@ -10,35 +10,39 @@
     display: flex;
     align-items: center;
     width: 100%;
-    padding: 1vw 2vw;
+    padding: 0.8vw 1.8vw;
     padding-right: 0;
     border-top: 1px solid #888;
     cursor: pointer;
     transition: background-color 0.4s ease;
   }
   
-  .elem:hover {
-    background-color: #EDBFFF; /* Change to the color you prefer */
-    transition: 0.5s ease-in-out;
-  }
+.elem:hover {
+  background-color: #EDBFFF;
+  transition: 0.5s ease-in-out;
+}
   
   .elem p {
     text-transform: uppercase;
-    font-size: 1.5vw; /* Decrease font size */
+    font-size: 1.2vw;
     opacity: 0.7;
-    margin-top: 0.5vw; /* Adjust spacing above the h1 */
-    margin-bottom: 0; /* Remove default margin */
+    margin-top: 0.5vw;
+    margin-bottom: 0; 
   }
+
+.elem p:hover{
+  color: #111;
+}
   .elemlast {
     border-bottom: 1px solid #888;
   }
   
-  .elem img {
-    opacity: 0;
-    pointer-events: none;
-    height: 300%;
-    z-index: 999;
-    position: absolute;
-    transform: translate(-50%, -50%);
-  }
+.elem img {
+  opacity: 0;
+  pointer-events: none;
+  height: 300%;
+  z-index: 999;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
   

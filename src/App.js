@@ -9,6 +9,7 @@ import SKills from './components/SKills';
 import LocomotiveScroll from 'locomotive-scroll';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Contact from './components/Contact';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -38,6 +39,9 @@ const App = () => {
       </div>
       <div className="page4">
         <SKills/>
+      </div>
+      <div className='page5'>
+        <Contact/>
       </div>
     </div>
   );

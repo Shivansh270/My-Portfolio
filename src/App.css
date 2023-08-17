@@ -53,3 +53,10 @@ body {
   position: relative;
   z-index: 9;
 } 
+
+.page5{
+  width: 100%;
+  min-height: 90vh;
+  padding: 100px 5vw;
+  z-index: 9;
+}

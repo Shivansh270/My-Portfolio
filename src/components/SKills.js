@@ -10,6 +10,9 @@ const skillsData = [
     { name: 'js', image: linkedin },
     { name: 'react', image: three },
     { name: 'nodejs', image: four },
+    { name: 'mongodb', image: four },
+    { name: 'redux', image: four },
+    { name: 'tailwind css', image: four },
     // Add more skills here
   ];
 
@@ -52,7 +55,7 @@ const handleMouseEnter = (event, image) => {
     
     gsap.to(img, {
       opacity: 0,
-      ease: 'power2.inOut', // Use easing function for smoother effect
+      ease: 'power2.inOut',
       duration: 0.3,
     });
   };
