@@ -1,22 +1,30 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import linkedin from "../assets/2.png";
-import three from "../assets/3 (1).png";
-import four from "../assets/3 (2).png";
+import { FiLinkedin, FiDatabase } from "react-icons/fi"; // Import icons
+import { IoLogoJavascript } from "react-icons/io"; // Import icons
+import { FaReact } from "react-icons/fa";
+import { SiMongodb, SiTailwindcss } from "react-icons/si";
+import { BiLogoRedux } from "react-icons/bi";
+
 import "./Skills.css";
 
 const skillsData = [
-  { name: "js", image: linkedin },
-  { name: "react", image: three },
-  { name: "nodejs", image: four },
-  { name: "mongodb", image: four },
-  { name: "redux", image: four },
-  { name: "tailwind css", image: four },
+  { name: "js", icon: <FiLinkedin size={70} /> },
+  { name: "React", icon: <FaReact size={70} /> },
+  { name: "Redux", icon: <BiLogoRedux size={70} /> },
+  { name: "MongoDb", icon: <SiMongodb size={70} /> },
+
+  // { name: "react", icon: <FiReact size={32} /> },
+  // { name: "nodejs", icon: <FiNodejs size={32} /> },
+  // IoLogoJavascript,
+  { name: "Javascript", icon: <IoLogoJavascript size={70} /> },
+  // { name: "redux", icon: <FiRedux size={32} /> },
+  { name: "Tailwind CSS", icon: <SiTailwindcss size={32} /> },
   // Add more skills here
 ];
 
-const SKills = () => {
+const Skills = () => {
   const skillRef = useRef(null);
 
   useEffect(() => {
@@ -37,8 +45,8 @@ const SKills = () => {
     });
   }, []);
 
-  const handleMouseEnter = (event, image) => {
-    const img = event.currentTarget.querySelector("img");
+  const handleMouseEnter = (event, icon) => {
+    const img = event.currentTarget.querySelector(".icon");
     const diff =
       event.clientY - event.currentTarget.getBoundingClientRect().top;
 
@@ -52,7 +60,7 @@ const SKills = () => {
   };
 
   const handleMouseLeave = (event) => {
-    const img = event.currentTarget.querySelector("img");
+    const img = event.currentTarget.querySelector(".icon");
 
     gsap.to(img, {
       opacity: 0,
@@ -62,8 +70,8 @@ const SKills = () => {
   };
 
   return (
-    <div id="second" useRef={skillRef}>
-      <h2 className="skill-heading">Skills I have</h2>
+    <div id="second" ref={skillRef}>
+      <h2 className="skill-heading">My Skill Stack</h2>
 
       {skillsData.map((skill, index) => (
         <div
@@ -71,10 +79,10 @@ const SKills = () => {
             index === skillsData.length - 1 ? "elemlast" : ""
           }`}
           key={index}
-          onMouseEnter={(e) => handleMouseEnter(e, skill.image)}
+          onMouseEnter={(e) => handleMouseEnter(e, skill.icon)}
           onMouseLeave={handleMouseLeave}
         >
-          <img src={skill.image} alt="" />
+          <div className="icon">{skill.icon}</div>
           <p>{skill.name}</p>
         </div>
       ))}
@@ -82,4 +90,4 @@ const SKills = () => {
   );
 };
 
-export default SKills;
+export default Skills;

@@ -44,7 +44,7 @@ const About = () => {
 
   return (
     <div ref={aboutRef} id="about">
-      <h1 className="page2-h1">Let me introduce,</h1>
+      <h1 className="page2-h1">Let me introduce myself,</h1>
       <div className="page2-container">
         <div className="page2-left">
           <h2>
@@ -63,7 +63,7 @@ const About = () => {
             aliquip ex ea commodo consequa
           </p>
           <a href={require("../assets/res.pdf")} download>
-            <button>Download</button>
+            <button>Download Resume</button>
           </a>
         </div>
       </div>

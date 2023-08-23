@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import "./Projects.css";
 import ProjectCard from "./ProjectCard";
-import google from "../assets/1.png";
-import linkedin from "../assets/2.png";
-import three from "../assets/3 (1).png";
-import four from "../assets/3 (2).png";
+import linkedin from "../assets/link.jpg";
+import google from "../assets/google.jpg";
+import three from "../assets/e comm.jpg";
+
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -30,13 +30,13 @@ const projects = [
     liveDemoLink: "https://example.com/project-three-demo",
     githubLink: "https://github.com/your-username/project-three-repo",
   },
-  {
-    imageSrc: four,
-    title: "Blog App",
-    description: "js css",
-    liveDemoLink: "https://example.com/blog-app-demo",
-    githubLink: "https://github.com/your-username/blog-app-repo",
-  },
+  // {
+  //   imageSrc: four,
+  //   title: "Blog App",
+  //   description: "js css",
+  //   liveDemoLink: "https://example.com/blog-app-demo",
+  //   githubLink: "https://github.com/your-username/blog-app-repo",
+  // },
 ];
 
 const Projects = () => {
@@ -53,7 +53,7 @@ const Projects = () => {
     });
 
     tlProject.from(
-      ".project-heading, .project-card, .view-all h2, .view-all button, .desc",
+      ".project-heading, .project-card, .view-all h2, .view-all button",
       {
         opacity: 0,
         y: 60,
@@ -66,7 +66,7 @@ const Projects = () => {
 
   return (
     <div className="project-section" ref={projectRef} id="projects">
-      <h2 className="project-heading">My Work</h2>
+      <h2 className="project-heading">Works from My Portfolio</h2>
       <div className="project-cards">
         {projects.map((project, index) => (
           <ProjectCard
@@ -82,7 +82,7 @@ const Projects = () => {
       <div className="view-all">
         <h2>View all projects</h2>
         <a
-          href="https://github.com/your-username"
+          href="https://github.com/Shivansh270"
           target="_blank"
           rel="noopener noreferrer"
         >

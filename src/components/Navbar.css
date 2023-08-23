@@ -60,8 +60,26 @@
   font-size: 16px;
   font-weight: 500;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
-.nav h4:nth-child(1) {
-  border-bottom: 1.5px solid #fff;
+.nav h4 {
+  /* Your existing styles */
+  cursor: pointer; /* Change cursor to a pointer */
+  position: relative; /* Add this */
+}
+
+.nav h4::after {
+  content: "";
+  position: absolute;
+  bottom: -1.5px;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background-color: #fff;
+  transition: width 0.3s ease; /* Add this for smooth animation */
+}
+
+.nav h4:hover::after {
+  width: 100%; /* Expand the line to 100% on hover */
 }

@@ -1,7 +1,8 @@
 .page2-h1 {
   font-size: 6.5vw;
-  font-weight: 300;
+  font-weight: 400;
   color: #111;
+  opacity: 0.8;
 }
 
 .page2-container {
@@ -22,14 +23,15 @@
 
 .page2-left h2 {
   font-size: 3vw;
-  font-weight: 300;
+  font-weight: 350;
   color: #111;
   line-height: 4vw;
 }
 
 .page2-right p {
-  font-size: 24px;
+  font-size: 20px;
   color: #111;
+  line-height: 2vw;
 }
 
 .page2-right button {
