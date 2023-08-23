@@ -1,30 +1,29 @@
-import React, { useEffect } from 'react';
-import Navbar from './components/Navbar';
-import './App.css';
-import Home from './components/Home';
-import About from './components/About';
-import Projects from './components/Projects';
+import React, { useEffect } from "react";
+import Navbar from "./components/Navbar";
+import "./App.css";
+import Home from "./components/Home";
+import About from "./components/About";
+import Projects from "./components/Projects";
 // import CustomCursor from './components/customCursor';
-import SKills from './components/SKills';
-import LocomotiveScroll from 'locomotive-scroll';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import Contact from './components/Contact';
+import SKills from "./components/SKills";
+import LocomotiveScroll from "locomotive-scroll";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer/Footer";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const App = () => {
-
   useEffect(() => {
     const locomotiveScroll = new LocomotiveScroll({
-      el: document.querySelector('body'),
+      el: document.querySelector("body"),
       smooth: true,
     });
 
     locomotiveScroll.update();
-    
   }, []);
-  
+
   return (
     <div className="main">
       <div className="page1">
@@ -35,13 +34,14 @@ const App = () => {
         <About />
       </div>
       <div className="page3">
-        <Projects/>
+        <Projects />
       </div>
       <div className="page4">
-        <SKills/>
+        <SKills />
       </div>
-      <div className='page5'>
-        <Contact/>
+      <div className="page5">
+        <Contact />
+        <Footer />
       </div>
     </div>
   );

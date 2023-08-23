@@ -1,24 +1,12 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import "./About.css";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const About = () => {
-  const [scrolled, setScrolled] = useState(false);
-
-  const handleScroll = () => {
-    const offset = window.scrollY;
-    if (offset > 200) {
-      setScrolled(true);
-    } else {
-      setScrolled(false);
-    }
-  };
   const aboutRef = useRef(null);
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
     gsap.registerPlugin(ScrollTrigger);
 
     const tl2 = gsap.timeline({
@@ -55,10 +43,7 @@ const About = () => {
   }, []);
 
   return (
-    <div
-      ref={aboutRef}
-      className={`main-header ${scrolled ? "sticky-header" : ""}`}
-    >
+    <div ref={aboutRef} id="about">
       <h1 className="page2-h1">Let me introduce,</h1>
       <div className="page2-container">
         <div className="page2-left">
@@ -75,7 +60,9 @@ const About = () => {
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequa
           </p>
-          <button>Download</button>
+          <a href={require("../assets/res.pdf")} download>
+            <button>Download</button>
+          </a>
         </div>
       </div>
     </div>

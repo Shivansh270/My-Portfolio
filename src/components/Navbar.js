@@ -1,5 +1,6 @@
-import React from 'react';
-import './Navbar.css';
+import React from "react";
+import "./Navbar.css";
+import { scrollToSection } from "./utils/scroller";
 
 const Navbar = () => {
   return (
@@ -10,7 +11,7 @@ const Navbar = () => {
       />
       <div className="nav-part2">
         <h4>Home</h4>
-        <h4>Work</h4>
+        <h4 onClick={() => scrollToSection("projects")}>Work</h4>
         <h4>About</h4>
         <h4>Contact</h4>
       </div>
