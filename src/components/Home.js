@@ -2,14 +2,14 @@ import React, { useEffect, useRef } from "react";
 import "./Home.css";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import gifImage from "../assets/full-stack-development.gif";
 
 const Home = () => {
   const homeRef = useRef(null);
   const h1Ref = useRef(null);
   const h2Ref = useRef(null);
   const h5Ref = useRef(null);
-
-  const videoRef = useRef(null);
+  const gifRef = useRef(null);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -48,7 +48,7 @@ const Home = () => {
     );
 
     tl.to(
-      videoRef.current,
+      gifRef.current,
       {
         width: "90%",
       },
@@ -62,7 +62,7 @@ const Home = () => {
       },
     });
 
-    tlHome.from(".home h1, .home h2, .home h5", {
+    tlHome.from(".home h1, .home h2, .home h5, .img", {
       opacity: 0,
       y: 60,
       duration: 1,
@@ -80,13 +80,7 @@ const Home = () => {
           <h5 ref={h5Ref}>based in jammu, india</h5>
         </div>
       </div>
-      <video className="video" ref={videoRef} controls muted loop>
-        <source
-          src="https://duo-studio.co/assets/home/Duo%20Reel--Desktop-reduced.mp4"
-          type="video/mp4"
-        />
-        Your browser does not support the video tag.
-      </video>
+      <img className="gif-image" src={gifImage} ref={gifRef} alt="GIF" />
     </div>
   );
 };

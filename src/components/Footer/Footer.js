@@ -1,10 +1,8 @@
 import React from "react";
 import { FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa";
-
 import SocialIcon from "./Social-icons/SocialIcon";
-import { scrollToSection } from "../utils/scroller";
-
 import "./Footer.css";
+import { scrollToSection } from "../utils/scroller";
 
 const Footer = () => {
   return (
@@ -33,7 +31,7 @@ const Footer = () => {
           </li>
           <li
             className="footer-menu-item"
-            onClick={() => scrollToSection("skills")}
+            onClick={() => scrollToSection("second")}
           >
             Skills
           </li>
@@ -50,9 +48,21 @@ const Footer = () => {
           <h4>Connect With Me</h4>
         </div>
         <div className="social-icons">
-          <SocialIcon color="#0D2636" icon={<FaGithub size={50} />} />
-          <SocialIcon color="#0A66C2" icon={<FaLinkedinIn size={30} />} />
-          <SocialIcon color="#E84C88" icon={<FaInstagram size={30} />} />
+          <SocialIcon
+            color="#0D2636"
+            icon={<FaGithub size={50} />}
+            link="https://github.com/Shivansh270"
+          />
+          <SocialIcon
+            color="#0A66C2"
+            icon={<FaLinkedinIn size={30} />}
+            link="https://www.linkedin.com/in/shivansh-gupta-6352821bb/"
+          />
+          <SocialIcon
+            color="#E84C88"
+            icon={<FaInstagram size={30} />}
+            link="https://www.instagram.com/"
+          />
         </div>
         <div className="bottom-bar">
           <div className="copyright-text">

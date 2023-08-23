@@ -17,11 +17,6 @@
   margin-top: 30px;
 }
 
-/* .project-image {
-  width: 350px;
-  height: 400px;
-} */
-
 .project-card:nth-child(2) {
   margin-top: 180px;
 }
@@ -31,12 +26,11 @@
 }
 
 .project-title {
-  font-size: 14px;
+  font-size: 18px;
+  font-weight: 700;
   color: #111;
 }
-.project-desc {
-  color: #111;
-}
+
 .view-all {
   display: flex;
   align-items: center;
@@ -54,7 +48,7 @@
 .github-button {
   width: 120px;
   height: 120px;
-  line-height: 100px; /* Add this line */
+  line-height: 100px;
   border-radius: 50%;
   background-color: #edbfff;
   text-transform: uppercase;

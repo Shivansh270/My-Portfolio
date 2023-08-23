@@ -3,40 +3,45 @@ import "./Projects.css";
 import ProjectCard from "./ProjectCard";
 import linkedin from "../assets/link.jpg";
 import google from "../assets/google.jpg";
-import three from "../assets/e comm.jpg";
+import ecomm from "../assets/e comm.jpg";
+import four from "../assets/express.png";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const projects = [
   {
+    imageSrc: ecomm,
+    title: "ShopEZ an E Commerce App",
+    description:
+      "ShopEZ: Your ultimate e-commerce destination. Built with React, Strapi, and Stripe, enjoy smooth shopping, easy content management, and secure payments all in one place.",
+    liveDemoLink: "https://example.com/project-three-demo",
+    githubLink: "https://github.com/Shivansh270/E-Commerce-app",
+  },
+  {
     imageSrc: linkedin,
-    title: "Linkedin clone",
-    description: "js css",
-    liveDemoLink: "https://example.com/linkedin-demo",
-    githubLink: "https://github.com/your-username/linkedin-repo",
+    title: "Linkedin Clone",
+    description:
+      "Share your post and connect authentically with this dynamic platform powered by React, Redux, and Firebase. Redefining web development – experience ",
+    liveDemoLink: "https://linkedin-clone-react-redux-omega.vercel.app/",
+    githubLink: "https://github.com/Shivansh270/Linkedin-clone-react-redux",
   },
   {
     imageSrc: google,
     title: "Google clone",
-    description: "js css",
-    liveDemoLink: "https://example.com/google-demo",
-    githubLink: "https://github.com/your-username/google-repo",
+    description:
+      "Discover seamlessly with Google Clone. Built using React, Context API, and Google API, it offers a user-friendly interface for an enhanced search experience.",
+    liveDemoLink: "https://searchgoogle20.netlify.app",
+    githubLink: "https://github.com/Shivansh270/Google-search-clone-react",
   },
+
   {
-    imageSrc: three,
-    title: "Project Three",
+    imageSrc: four,
+    title: "Blog App",
     description: "js css",
-    liveDemoLink: "https://example.com/project-three-demo",
-    githubLink: "https://github.com/your-username/project-three-repo",
+    liveDemoLink: "https://blog-app-iota-pied.vercel.app/",
+    githubLink: "https://github.com/Shivansh270/Blog-app-context-API",
   },
-  // {
-  //   imageSrc: four,
-  //   title: "Blog App",
-  //   description: "js css",
-  //   liveDemoLink: "https://example.com/blog-app-demo",
-  //   githubLink: "https://github.com/your-username/blog-app-repo",
-  // },
 ];
 
 const Projects = () => {
