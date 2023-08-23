@@ -3,24 +3,22 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { FiLinkedin, FiDatabase } from "react-icons/fi"; // Import icons
 import { IoLogoJavascript } from "react-icons/io"; // Import icons
-import { FaReact } from "react-icons/fa";
-import { SiMongodb, SiTailwindcss } from "react-icons/si";
+import { FaReact, FaNodeJs, FaCss3Alt, FaPython } from "react-icons/fa";
+import { SiMongodb, SiTailwindcss, SiExpress } from "react-icons/si";
 import { BiLogoRedux } from "react-icons/bi";
 
 import "./Skills.css";
 
 const skillsData = [
-  { name: "js", icon: <FiLinkedin size={70} /> },
+  { name: "Javascript", icon: <IoLogoJavascript size={70} /> },
   { name: "React", icon: <FaReact size={70} /> },
   { name: "Redux", icon: <BiLogoRedux size={70} /> },
   { name: "MongoDb", icon: <SiMongodb size={70} /> },
-
-  // { name: "react", icon: <FiReact size={32} /> },
-  // { name: "nodejs", icon: <FiNodejs size={32} /> },
-  // IoLogoJavascript,
-  { name: "Javascript", icon: <IoLogoJavascript size={70} /> },
-  // { name: "redux", icon: <FiRedux size={32} /> },
-  { name: "Tailwind CSS", icon: <SiTailwindcss size={32} /> },
+  { name: "NodeJs", icon: <FaNodeJs size={70} /> },
+  { name: "Express", icon: <SiExpress size={70} /> },
+  { name: "Python", icon: <FaPython size={70} /> },
+  { name: "Css3", icon: <FaCss3Alt size={70} /> },
+  { name: "Tailwind CSS", icon: <SiTailwindcss size={70} /> },
   // Add more skills here
 ];
 

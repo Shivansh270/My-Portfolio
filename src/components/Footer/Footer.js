@@ -47,14 +47,12 @@ const Footer = () => {
           </li>
         </ul>
         <div className="social-heading">
-          <h4>
-            <span>Connect</span> With Me
-          </h4>
+          <h4>Connect With Me</h4>
         </div>
         <div className="social-icons">
-          <SocialIcon color="#0D2636" icon={<FaGithub />} />
-          <SocialIcon color="#0A66C2" icon={<FaLinkedinIn />} />
-          <SocialIcon color="#E84C88" icon={<FaInstagram />} />
+          <SocialIcon color="#0D2636" icon={<FaGithub size={50} />} />
+          <SocialIcon color="#0A66C2" icon={<FaLinkedinIn size={30} />} />
+          <SocialIcon color="#E84C88" icon={<FaInstagram size={30} />} />
         </div>
         <div className="bottom-bar">
           <div className="copyright-text">

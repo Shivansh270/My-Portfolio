@@ -1,14 +1,12 @@
 import React from "react";
 import "./Navbar.css";
 import { scrollToSection } from "./utils/scroller";
-
+import { FiGithub } from "react-icons/fi";
+import sg from "../assets/sg2.jpg";
 const Navbar = () => {
   return (
     <nav className="nav">
-      <img
-        src="https://d33wubrfki0l68.cloudfront.net/439bf938233c24af021ffe6d206cd42f546e1143/ff4ed/assets/logo.svg"
-        alt=""
-      />
+      <img src={sg} alt="" />
       <div className="nav-part2">
         <h4>Home</h4>
         <h4 onClick={() => scrollToSection("projects")}>Work</h4>
@@ -16,7 +14,7 @@ const Navbar = () => {
         <h4>Contact</h4>
       </div>
       <div className="nav-part3">
-        <div className="circle"></div>
+        <FiGithub size={30} />
       </div>
     </nav>
   );

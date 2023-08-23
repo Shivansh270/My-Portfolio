@@ -15,9 +15,10 @@
 }
 
 .head-text {
-  font-size: 3vw;
-  font-weight: 300;
+  font-size: 4vw;
+  font-weight: 400;
   text-transform: uppercase;
+  opacity: 0.6;
 }
 
 .app__footer-card {
@@ -30,28 +31,34 @@
   padding: 1rem;
   border-radius: 10px;
   cursor: pointer;
-  background-color: #edbfff;
-  transition: all 0.3s ease-in-out;
+  background-color: #f0f8ff;
+  box-shadow: 0 0 20px 0 rgba(240, 248, 255, 0.5);
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .app__footer-card a {
   text-decoration: none;
-  font-weight: 100;
+  font-weight: 500;
   color: #111;
   font-size: 0.9vw;
 }
 
-.mail-icon {
-  color: edbfff;
+.app__footer-card .mail-icon {
+  color: #111;
 }
 
 .app__footer-card:hover {
-  background-color: #c59ce1;
-  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 20px 0 rgba(240, 248, 255, 0.8);
 }
 
 .app__footer-cards .app__footer-card:last-child {
-  background-color: #edbfff;
+  background-color: #f0f8ff;
+  box-shadow: 0 0 10px 0 rgba(240, 248, 255, 0.5);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.app__footer-cards .app__footer-card:last-child:hover {
+  box-shadow: 0 0 20px 0 rgba(240, 248, 255, 0.8);
 }
 
 .app__footer-form {
@@ -65,7 +72,6 @@
   margin: 0.75rem 0;
   border-radius: 10px;
   cursor: pointer;
-  background-color: #edbfff;
   transition: all 0.3s ease-in-out;
 }
 
@@ -75,22 +81,15 @@
   padding: 0.95rem;
   border: none;
   border-radius: 7px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #f0f8ff;
+  box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.5); /* White box shadow */
+  transition: box-shadow 0.3s ease-in-out;
   outline: none;
+  color: #242b2e;
 }
 
 .app__footer-form textarea {
   height: 170px;
-  background-color: transparent;
-}
-
-.app__footer-form input::placeholder,
-.app__footer-form textarea::placeholder {
-  color: #555555;
-}
-
-.app__footer-form div:hover {
-  box-shadow: 0 0 25px var(--primary-color);
 }
 
 .app__footer-form button {
@@ -102,8 +101,6 @@
   color: #111;
   outline: none;
   margin: 2rem 0 0 0;
-  font-family: var(--font-base);
-  transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
   cursor: pointer;
 }
 
@@ -116,25 +113,17 @@ textarea {
   margin-top: 20px;
   display: flex;
   align-items: center;
-  width: 100%;
-  resize: none;
-  height: 59px;
-  outline: none;
-  font-size: 16px;
+
   border-radius: 8px;
   min-height: 300px;
   max-height: 600px;
-  background: radial-gradient(#281c3e, #0f051d);
+  background-color: #f0f8ff;
   color: #242b2e;
+  font-weight: 400;
   border: 1px solid white;
   box-shadow: 2px 2px 10px #fff;
   margin-bottom: 12px;
-  padding: 0.95rem;
   background-color: rgba(0, 0, 0, 0.4);
-}
-
-textarea::placeholder {
-  color: #b3b3b3;
 }
 
 textarea:is(:focus, :valid) {

@@ -16,6 +16,7 @@ body {
 
 .main {
   background-color: #0f0d0d;
+  overflow-x: hidden;
 }
 
 .page1 {
@@ -55,7 +56,7 @@ body {
 
 .page5 {
   width: 100%;
-  min-height: 90vh;
+  min-height: 70vh;
   padding: 100px 5vw;
   z-index: 9;
 }
