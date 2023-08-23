@@ -1,29 +1,44 @@
 /* Home.css */
 
 .home {
-    position: absolute;
-    top: 12vw;
-    left: 6vw;
-  }
-  
-  .home h1 {
-    font-size: 8vw;
-    font-weight: 300;
-    margin-left: 6vw;
-    transform-origin: left;
-  }
-  
-  .home h2 {
-    font-size: 8vw;
-    font-weight: 300;
-    transform-origin: left;
-    margin-left: 26vw;
-  }
-  
+  position: absolute;
+  margin-top: 12vw;
+  left: 6vw;
+}
+
+.home h1 {
+  font-size: 7vw;
+  font-weight: 500;
+  margin-left: 6vw;
+  transform-origin: left;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+.home h2 {
+  font-size: 7vw;
+  font-weight: 500;
+  transform-origin: left;
+  margin-left: 23vw;
+  opacity: 0.6;
+  text-transform: uppercase;
+}
+
+.block-text {
+  width: fit-content;
+}
+
+.block-text h5 {
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 16px;
+  opacity: 0.6;
+}
+
 .video {
-    width: 50%;
-    margin-top: 40vw;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+  width: 50%;
+  margin-top: 40vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}

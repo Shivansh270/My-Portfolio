@@ -7,6 +7,8 @@ const Home = () => {
   const homeRef = useRef(null);
   const h1Ref = useRef(null);
   const h2Ref = useRef(null);
+  const h5Ref = useRef(null);
+
   const videoRef = useRef(null);
 
   useEffect(() => {
@@ -38,6 +40,14 @@ const Home = () => {
     );
 
     tl.to(
+      h5Ref.current,
+      {
+        x: 100,
+      },
+      "animation"
+    );
+
+    tl.to(
       videoRef.current,
       {
         width: "90%",
@@ -52,7 +62,7 @@ const Home = () => {
       },
     });
 
-    tlHome.from(".home h1, .home h2", {
+    tlHome.from(".home h1, .home h2, .home h5", {
       opacity: 0,
       y: 60,
       duration: 1,
@@ -65,7 +75,10 @@ const Home = () => {
     <div ref={homeRef} id="home">
       <div className="home">
         <h1 ref={h1Ref}>Shivansh gupta</h1>
-        <h2 ref={h2Ref}>web developer</h2>
+        <div className="block-text">
+          <h2 ref={h2Ref}>web developer</h2>
+          <h5 ref={h5Ref}>based in jammu</h5>
+        </div>
       </div>
       <video className="video" ref={videoRef} controls muted loop>
         <source

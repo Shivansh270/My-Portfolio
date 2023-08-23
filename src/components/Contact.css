@@ -1,126 +1,147 @@
 .contact-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .app__footer-cards {
-    width: 60%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 4em 2rem 2rem;
-  }
-  
-  .head-text {
-    font-size: 3vw;
-    font-weight: 300;
-    text-transform: uppercase;
-  }
-  
-  .app__footer-card {
-    min-width: 290px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 1rem 0;
-    padding: 1rem;
-    border-radius: 10px;
-    cursor: pointer;
-    background-color: #EDBFFF;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  /* .app__footer-card p {
-    font-weight: 500;
-    color: #111;
-  }
-   */
-  .app__footer-card a {
-    text-decoration: none;
-    font-weight: 100;
-    color: #111;
-    font-size: 0.9vw;
-  }
-
-.mail-icon{
-    color: black;
-}
-  
-  .app__footer-card:hover {
-    background-color: #C59CE1;
-    transition: all 0.3s ease-in-out;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-  
-  .app__footer-cards .app__footer-card:last-child {
-    background-color: #EDBFFF;
-  }
-  
-  /* .app__footer-cards .app__footer-card:last-child:hover {
-    box-shadow: 0 0 25px #f2f7fb;
-  } */
-  
-  .app__footer-form {
-    width: 60%;
-    flex-direction: column;
-    margin: 1rem 2rem;
-  }
-  
-  .app__footer-form div {
-    width: 100%;
-    margin: 0.75rem 0;
-    border-radius: 10px;
-    cursor: pointer;
-    background-color: #f4f4f4;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .app__footer-form input,
-  .app__footer-form textarea {
-    width: 100%;
-    padding: 0.95rem;
-    border: none;
-    border-radius: 7px;
-    background-color: rgba(255, 255, 255, 0.8);
-    /* font-family: var(--font-base); */
-    color: var(--secondary-color);
-    outline: none;
-  }
-  
-  .app__footer-form textarea {
-    height: 170px;
-    background-color: transparent; /* Make text area background transparent */
-  }
-  
-  .app__footer-form input::placeholder,
-  .app__footer-form textarea::placeholder {
-    color: #555555; /* Set placeholder color to black */
-  }
-  
-  .app__footer-form div:hover {
-    box-shadow: 0 0 25px var(--primary-color);
-  }
-  
-  .app__footer-form button {
-    padding: 1rem 2rem;
-    border-radius: 10px;
-    border: none;
-    background-color: #EDBFFF; /* Button color matches #111 */
-    font-weight: 500;
-    color: #111;
-    outline: none;
-    margin: 2rem 0 0 0;
-    font-family: var(--font-base);
-    transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
-    cursor: pointer;
-  }
-  
-  .app__footer-form button:hover {
-    background-color: #C59CE1;
-    transition: all 0.3s ease-in-out;
-  }
-  
+.app__footer-cards {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 4em 2rem 2rem;
+}
+
+.head-text {
+  font-size: 3vw;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.app__footer-card {
+  min-width: 290px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #edbfff;
+  transition: all 0.3s ease-in-out;
+}
+
+.app__footer-card a {
+  text-decoration: none;
+  font-weight: 100;
+  color: #111;
+  font-size: 0.9vw;
+}
+
+.mail-icon {
+  color: edbfff;
+}
+
+.app__footer-card:hover {
+  background-color: #c59ce1;
+  transition: all 0.3s ease-in-out;
+}
+
+.app__footer-cards .app__footer-card:last-child {
+  background-color: #edbfff;
+}
+
+.app__footer-form {
+  width: 60%;
+  flex-direction: column;
+  margin: 1rem 2rem;
+}
+
+.app__footer-form div {
+  width: 100%;
+  margin: 0.75rem 0;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #edbfff;
+  transition: all 0.3s ease-in-out;
+}
+
+.app__footer-form input,
+.app__footer-form textarea {
+  width: 100%;
+  padding: 0.95rem;
+  border: none;
+  border-radius: 7px;
+  background-color: rgba(255, 255, 255, 0.8);
+  outline: none;
+}
+
+.app__footer-form textarea {
+  height: 170px;
+  background-color: transparent;
+}
+
+.app__footer-form input::placeholder,
+.app__footer-form textarea::placeholder {
+  color: #555555;
+}
+
+.app__footer-form div:hover {
+  box-shadow: 0 0 25px var(--primary-color);
+}
+
+.app__footer-form button {
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #edbfff;
+  font-weight: 500;
+  color: #111;
+  outline: none;
+  margin: 2rem 0 0 0;
+  font-family: var(--font-base);
+  transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  cursor: pointer;
+}
+
+.app__footer-form button:hover {
+  background-color: #c59ce1;
+  transition: all 0.3s ease-in-out;
+}
+
+textarea {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  resize: none;
+  height: 59px;
+  outline: none;
+  font-size: 16px;
+  border-radius: 8px;
+  min-height: 300px;
+  max-height: 600px;
+  background: radial-gradient(#281c3e, #0f051d);
+  color: #242b2e;
+  border: 1px solid white;
+  box-shadow: 2px 2px 10px #fff;
+  margin-bottom: 12px;
+  padding: 0.95rem;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+textarea::placeholder {
+  color: #b3b3b3;
+}
+
+textarea:is(:focus, :valid) {
+  padding: 14px;
+  border: 2px solid #fff;
+}
+
+textarea::-webkit-scrollbar {
+  width: 0px;
+}

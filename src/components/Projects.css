@@ -1,8 +1,8 @@
-
 .project-heading {
   font-size: 6.5vw;
-  font-weight: 300;
+  font-weight: 400;
   color: #111;
+  opacity: 0.8;
 }
 
 .project-cards {
@@ -14,7 +14,7 @@
 
 .project-card {
   flex: 0 0 calc(35% - 20px);
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .project-image {
@@ -30,12 +30,13 @@
   margin-top: 180px;
 }
 
-.desc {
-  font-size: 14px;  
+.project-title {
+  font-size: 14px;
   color: #111;
 }
-
-
+.project-desc {
+  color: #111;
+}
 .view-all {
   display: flex;
   align-items: center;
@@ -44,8 +45,8 @@
 }
 
 .view-all h2 {
-  font-size: 4vw;
-  font-weight: 300;
+  font-size: 4.3vw;
+  font-weight: 400;
   color: #555555;
   text-transform: uppercase;
 }
@@ -55,11 +56,15 @@
   height: 120px;
   line-height: 100px; /* Add this line */
   border-radius: 50%;
-  background-color: #EDBFFF;
+  background-color: #edbfff;
   text-transform: uppercase;
   color: #111;
-  font-size: 10px;
+  font-size: 12px;
+  font-weight: 500;
   border: none;
   cursor: pointer;
 }
 
+.github-button:hover {
+  background-color: #c59ce1;
+}
