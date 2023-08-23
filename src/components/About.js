@@ -48,8 +48,10 @@ const About = () => {
       <div className="page2-container">
         <div className="page2-left">
           <h2>
-            "TRANSFORMING VISIONS<br></br>
-            INTO<br></br>
+            "TRANSFORMING VISIONS
+            <br />
+            INTO
+            <br />
             CODE-DRIVEN INTERACTION"
           </h2>
         </div>
