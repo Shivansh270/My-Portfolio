@@ -8,7 +8,7 @@ const ProjectCard = ({
   liveDemoLink,
   githubLink,
   title,
-  hideLiveDemo, // Add the prop for conditional rendering
+  hideLiveDemo,
 }) => {
   return (
     <div className="project-card">
@@ -19,7 +19,6 @@ const ProjectCard = ({
         <h3 className="project-title">{title}</h3>
         <p className="project-desc">{description}</p>
         <div className="project-buttons">
-          {/* Conditionally render the Live Demo button */}
           {!hideLiveDemo && (
             <a
               href={liveDemoLink}

@@ -13,8 +13,6 @@ const projects = [
   {
     imageSrc: ecomm,
     title: "ShopEZ an E Commerce App",
-    // liveDemoLink: "https://blog-app-iota-pied.vercel.app/",
-
     description:
       "ShopEZ: Your ultimate e-commerce destination. Built with React, Strapi, and Stripe, enjoy smooth shopping, easy content management, and secure payments all in one place.",
     githubLink: "https://github.com/Shivansh270/E-Commerce-app",
@@ -65,7 +63,7 @@ const Projects = () => {
         opacity: 0,
         y: 60,
         duration: 1,
-        stagger: 0.4,
+        stagger: 0.7,
         ease: "power3",
       }
     );

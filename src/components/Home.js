@@ -66,7 +66,7 @@ const Home = () => {
       opacity: 0,
       y: 60,
       duration: 1,
-      stagger: 0.4,
+      stagger: 0.7,
       ease: "power3.out",
     });
   }, []);

@@ -34,7 +34,7 @@ const Skills = () => {
         scroller: "body",
         start: "top -360%",
         end: "top -480%",
-        scrub: 5,
+        scrub: 4,
       },
     });
 

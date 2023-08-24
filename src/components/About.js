@@ -64,7 +64,7 @@ const About = () => {
             inventive ideas and proof of concepts to align with project
             requisites.
           </p>
-          <a href={require("../assets/res.pdf")} download>
+          <a href={require("../assets/Resume.pdf")} download>
             <button>Download Resume</button>
           </a>
         </div>
