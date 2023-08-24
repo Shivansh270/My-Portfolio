@@ -1,11 +1,11 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { FiLinkedin, FiDatabase } from "react-icons/fi"; // Import icons
-import { IoLogoJavascript } from "react-icons/io"; // Import icons
+import { IoLogoJavascript } from "react-icons/io";
 import { FaReact, FaNodeJs, FaCss3Alt, FaPython } from "react-icons/fa";
 import { SiMongodb, SiTailwindcss, SiExpress } from "react-icons/si";
 import { BiLogoRedux } from "react-icons/bi";
+import { BsGit } from "react-icons/bs";
 
 import "./Skills.css";
 
@@ -15,11 +15,11 @@ const skillsData = [
   { name: "Redux", icon: <BiLogoRedux size={70} /> },
   { name: "MongoDb", icon: <SiMongodb size={70} /> },
   { name: "NodeJs", icon: <FaNodeJs size={70} /> },
-  { name: "Express", icon: <SiExpress size={70} /> },
+  { name: "ExpressJs", icon: <SiExpress size={70} /> },
   { name: "Python", icon: <FaPython size={70} /> },
   { name: "Css3", icon: <FaCss3Alt size={70} /> },
   { name: "Tailwind CSS", icon: <SiTailwindcss size={70} /> },
-  // Add more skills here
+  { name: "Git", icon: <BsGit size={70} /> },
 ];
 
 const Skills = () => {
@@ -41,9 +41,24 @@ const Skills = () => {
     tl3.to(".main", {
       backgroundColor: "#0F0D0D",
     });
+
+    const tlSkills = gsap.timeline({
+      scrollTrigger: {
+        trigger: skillRef.current,
+        start: "top center",
+      },
+    });
+
+    tlSkills.from("#second, .elem", {
+      opacity: 0,
+      y: 60,
+      duration: 1,
+      stagger: 0.3,
+      ease: "power3",
+    });
   }, []);
 
-  const handleMouseEnter = (event, icon) => {
+  const handleMouseEnter = (event) => {
     const img = event.currentTarget.querySelector(".icon");
     const diff =
       event.clientY - event.currentTarget.getBoundingClientRect().top;

@@ -35,10 +35,11 @@
   opacity: 0.6;
 }
 
-.video {
+.gif-image {
   width: 50%;
   margin-top: 40vw;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+  color: black;
 }

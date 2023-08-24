@@ -1,4 +1,3 @@
-/* ProjectCard.css */
 .project-card {
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -53,14 +52,16 @@
 }
 
 .project-desc {
-  color: #111;
-  margin-top: 10px;
+  color: #242b2e;
+  margin-top: 12px;
   font-size: 14px;
+  line-height: 1.7;
+  font-weight: 400;
 }
 
 .project-buttons {
   display: flex;
-  justify-content: space-evenly; /* Place buttons on extreme ends */
+  justify-content: space-evenly;
   gap: 8px;
   margin-top: 15px;
 }

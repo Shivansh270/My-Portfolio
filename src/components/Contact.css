@@ -44,7 +44,9 @@
 }
 
 .app__footer-card .mail-icon {
-  color: #111;
+  background-color: #242b2e;
+  /* opacity: 0.6; */
+  margin-right: 4px;
 }
 
 .app__footer-card:hover {

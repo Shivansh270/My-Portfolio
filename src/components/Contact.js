@@ -1,9 +1,31 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Contact.css";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { FcPhoneAndroid } from "react-icons/fc";
 import { FiMail } from "react-icons/fi";
 
 const Contact = () => {
+  const contactRef = useRef(null);
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const tlContact = gsap.timeline({
+      scrollTrigger: {
+        trigger: contactRef.current,
+        start: "top center",
+      },
+    });
+
+    tlContact.from(".contact-page, .head-text", {
+      opacity: 0,
+      y: 60,
+      duration: 1,
+      stagger: 0.4,
+      ease: "power3",
+    });
+  }, []);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -43,18 +65,18 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact-page" id="contact">
+    <div className="contact-page" id="contact" useRef={contactRef}>
       <h2 className="head-text">Dropping a Line to Say Hello?</h2>
 
       <div className="app__footer-cards">
         <div className="app__footer-card ">
-          <FiMail className="mail-icon" />
+          <FiMail className="mail-icon" />{" "}
           <a
             href="mailto:gupta.shivansh2709@gmail.com"
             className="p-text"
             color="#fff"
           >
-            {" "}
+            {"  "}
             gupta.shivansh2709@gmail.com.com
           </a>
         </div>

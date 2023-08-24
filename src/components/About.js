@@ -57,10 +57,12 @@ const About = () => {
         </div>
         <div className="page2-right">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequa
+            Experienced Front End Developer specializing in the creation and
+            management of responsive websites within the recruitment sector.
+            Skilled in HTML, CSS, JavaScript, and ReactJs, along with
+            contemporary libraries and frameworks. Adept at conceptualizing
+            inventive ideas and proof of concepts to align with project
+            requisites.
           </p>
           <a href={require("../assets/res.pdf")} download>
             <button>Download Resume</button>
