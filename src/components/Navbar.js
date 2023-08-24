@@ -15,7 +15,13 @@ const Navbar = () => {
         <h4 onClick={() => scrollToSection("contact")}>Contact</h4>
       </div>
       <div className="nav-part3">
-        <FiGithub size={30} />
+        <a
+          href="https://github.com/Shivansh270/My-Portfolio"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FiGithub size={30} />
+        </a>
       </div>
     </nav>
   );
