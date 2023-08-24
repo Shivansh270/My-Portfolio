@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCard";
 import linkedin from "../assets/link.jpg";
 import google from "../assets/google.jpg";
 import ecomm from "../assets/e comm.jpg";
-import four from "../assets/express.png";
+import blog from "../assets/blog.jpg";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -13,9 +13,10 @@ const projects = [
   {
     imageSrc: ecomm,
     title: "ShopEZ an E Commerce App",
+    // liveDemoLink: "https://blog-app-iota-pied.vercel.app/",
+
     description:
       "ShopEZ: Your ultimate e-commerce destination. Built with React, Strapi, and Stripe, enjoy smooth shopping, easy content management, and secure payments all in one place.",
-    liveDemoLink: "https://example.com/project-three-demo",
     githubLink: "https://github.com/Shivansh270/E-Commerce-app",
   },
   {
@@ -36,9 +37,10 @@ const projects = [
   },
 
   {
-    imageSrc: four,
+    imageSrc: blog,
     title: "Blog App",
-    description: "js css",
+    description:
+      "Unleash blogging with our ReactJS and Tailwind CSS Blog App. Navigate through categories, tags, and authors across multiple pages. Elevate your content discovery today.",
     liveDemoLink: "https://blog-app-iota-pied.vercel.app/",
     githubLink: "https://github.com/Shivansh270/Blog-app-context-API",
   },
@@ -81,6 +83,7 @@ const Projects = () => {
             description={project.description}
             liveDemoLink={project.liveDemoLink}
             githubLink={project.githubLink}
+            hideLiveDemo={!project.liveDemoLink}
           />
         ))}
       </div>

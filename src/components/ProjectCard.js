@@ -1,5 +1,5 @@
 import React from "react";
-import { FiExternalLink, FiGithub } from "react-icons/fi"; // Import React Icons
+import { FiExternalLink, FiGithub } from "react-icons/fi";
 import "./ProjectCard.css";
 
 const ProjectCard = ({
@@ -8,6 +8,7 @@ const ProjectCard = ({
   liveDemoLink,
   githubLink,
   title,
+  hideLiveDemo, // Add the prop for conditional rendering
 }) => {
   return (
     <div className="project-card">
@@ -18,14 +19,17 @@ const ProjectCard = ({
         <h3 className="project-title">{title}</h3>
         <p className="project-desc">{description}</p>
         <div className="project-buttons">
-          <a
-            href={liveDemoLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="project-button"
-          >
-            <FiExternalLink className="button-icon" /> Live Demo
-          </a>
+          {/* Conditionally render the Live Demo button */}
+          {!hideLiveDemo && (
+            <a
+              href={liveDemoLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-button"
+            >
+              <FiExternalLink className="button-icon" /> Live Demo
+            </a>
+          )}
           <a
             href={githubLink}
             target="_blank"
