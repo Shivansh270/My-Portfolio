@@ -8,24 +8,6 @@
   border-color: rgba(0, 0, 0, 0.1);
 }
 
-.main-header.sticky-header {
-  background-color: #212121;
-  color: white;
-  position: sticky;
-  top: 0;
-  transform: translateY(-60px);
-  animation: StickyHeader 0.3s ease forwards;
-}
-
-@keyframes StickyHeader {
-  0% {
-    transform: translateY(-60px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
 .nav {
   height: 55px;
   width: 100%;
@@ -39,7 +21,9 @@
 }
 
 .nav img {
-  height: 27px;
+  height: 65px;
+  width: 85px;
+  background-color: #111;
 }
 
 .nav-part2 {
@@ -49,24 +33,27 @@
   gap: 20px;
 }
 
-.nav .circle {
-  height: 18px;
-  width: 18px;
-  border-radius: 50%;
-  background-color: #fff;
-}
-
-.nav h4 {
-  font-size: 16px;
-  font-weight: 500;
-  text-transform: uppercase;
+.nav-part3 {
+  opacity: 0.6;
   cursor: pointer;
 }
 
+.nav-part3:hover {
+  transition: all 0.3 ease-in;
+  opacity: 0.4;
+}
+
 .nav h4 {
-  /* Your existing styles */
-  cursor: pointer; /* Change cursor to a pointer */
-  position: relative; /* Add this */
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.nav h4 {
+  cursor: pointer;
+  position: relative;
 }
 
 .nav h4::after {
@@ -77,9 +64,9 @@
   width: 0;
   height: 1.5px;
   background-color: #fff;
-  transition: width 0.3s ease; /* Add this for smooth animation */
+  transition: width 0.3s ease;
 }
 
 .nav h4:hover::after {
-  width: 100%; /* Expand the line to 100% on hover */
+  width: 100%;
 }

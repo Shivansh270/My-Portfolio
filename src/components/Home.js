@@ -77,7 +77,7 @@ const Home = () => {
         <h1 ref={h1Ref}>Shivansh gupta</h1>
         <div className="block-text">
           <h2 ref={h2Ref}>web developer</h2>
-          <h5 ref={h5Ref}>based in jammu</h5>
+          <h5 ref={h5Ref}>based in jammu, india</h5>
         </div>
       </div>
       <video className="video" ref={videoRef} controls muted loop>

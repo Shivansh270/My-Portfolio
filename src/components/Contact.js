@@ -49,7 +49,11 @@ const Contact = () => {
       <div className="app__footer-cards">
         <div className="app__footer-card ">
           <FiMail className="mail-icon" />
-          <a href="mailto:gupta.shivansh2709@gmail.com" className="p-text">
+          <a
+            href="mailto:gupta.shivansh2709@gmail.com"
+            className="p-text"
+            color="#fff"
+          >
             {" "}
             gupta.shivansh2709@gmail.com.com
           </a>
@@ -87,7 +91,7 @@ const Contact = () => {
           <div>
             <textarea
               className="p-text"
-              placeholder="Your Message"
+              placeholder="Your Message..."
               value={message}
               name="message"
               onChange={handleChangeInput}
