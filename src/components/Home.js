@@ -14,7 +14,7 @@ const Home = () => {
   useEffect(() => {
     const isMobile = window.innerWidth <= 768; // Adjust the breakpoint if needed
 
-    if (isMobile) {
+    if (!isMobile) {
       gsap.registerPlugin(ScrollTrigger);
 
       const tl = gsap.timeline({
