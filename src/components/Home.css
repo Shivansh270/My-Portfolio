@@ -43,3 +43,35 @@
   transform: translateX(-50%);
   color: black;
 }
+
+/* Media Query for Mobile Screens */
+@media (max-width: 768px) {
+  .home {
+    position: relative;
+    margin-top: 10vh;
+    left: 6vh;
+    display: flex;
+  }
+
+  .home h1 {
+    font-size: 10vw;
+    margin-left: 0;
+  }
+
+  .home h2 {
+    font-size: 8vw;
+    margin-left: 0;
+  }
+
+  .block-text h5 {
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .gif-image {
+    width: 100%;
+    margin-top: 20px;
+    left: 0;
+    transform: none;
+  }
+}

@@ -12,63 +12,67 @@ const Home = () => {
   const gifRef = useRef(null);
 
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
+    const isMobile = window.innerWidth <= 768; // Adjust the breakpoint if needed
 
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: h1Ref.current,
-        start: "top 27%",
-        end: "top 0",
-        scrub: 3,
-      },
-    });
+    if (isMobile) {
+      gsap.registerPlugin(ScrollTrigger);
 
-    tl.to(
-      h1Ref.current,
-      {
-        x: -100,
-      },
-      "animation"
-    );
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: h1Ref.current,
+          start: "top 27%",
+          end: "top 0",
+          scrub: 3,
+        },
+      });
 
-    tl.to(
-      h2Ref.current,
-      {
-        x: 100,
-      },
-      "animation"
-    );
+      tl.to(
+        h1Ref.current,
+        {
+          x: -100,
+        },
+        "animation"
+      );
 
-    tl.to(
-      h5Ref.current,
-      {
-        x: 100,
-      },
-      "animation"
-    );
+      tl.to(
+        h2Ref.current,
+        {
+          x: 100,
+        },
+        "animation"
+      );
 
-    tl.to(
-      gifRef.current,
-      {
-        width: "90%",
-      },
-      "animation"
-    );
+      tl.to(
+        h5Ref.current,
+        {
+          x: 100,
+        },
+        "animation"
+      );
 
-    const tlHome = gsap.timeline({
-      scrollTrigger: {
-        trigger: homeRef.current,
-        start: "top center",
-      },
-    });
+      tl.to(
+        gifRef.current,
+        {
+          width: "90%",
+        },
+        "animation"
+      );
 
-    tlHome.from(".home h1, .home h2, .home h5, .img", {
-      opacity: 0,
-      y: 60,
-      duration: 1,
-      stagger: 0.7,
-      ease: "power3.out",
-    });
+      const tlHome = gsap.timeline({
+        scrollTrigger: {
+          trigger: homeRef.current,
+          start: "top center",
+        },
+      });
+
+      tlHome.from(".home h1, .home h2, .home h5, .img", {
+        opacity: 0,
+        y: 60,
+        duration: 1,
+        stagger: 0.7,
+        ease: "power3.out",
+      });
+    }
   }, []);
 
   return (
