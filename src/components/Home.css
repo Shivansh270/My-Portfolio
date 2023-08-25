@@ -45,7 +45,7 @@
 }
 
 /* Media Query for Mobile Screens */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .home {
     position: relative;
     margin-top: 10vh;
@@ -75,4 +75,4 @@
     left: 0;
     transform: none;
   }
-}
+} */
