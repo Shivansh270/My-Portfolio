@@ -12,67 +12,65 @@ const Home = () => {
   const gifRef = useRef(null);
 
   useEffect(() => {
-    const isMobile = window.innerWidth <= 768; // Adjust the breakpoint if needed
+    // const isMobile = window.innerWidth <= 768; // Adjust the breakpoint if needed
 
-    if (!isMobile) {
-      gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollTrigger);
 
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: h1Ref.current,
-          start: "top 27%",
-          end: "top 0",
-          scrub: 3,
-        },
-      });
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: h1Ref.current,
+        start: "top 27%",
+        end: "top 0",
+        scrub: 3,
+      },
+    });
 
-      tl.to(
-        h1Ref.current,
-        {
-          x: -100,
-        },
-        "animation"
-      );
+    tl.to(
+      h1Ref.current,
+      {
+        x: -100,
+      },
+      "animation"
+    );
 
-      tl.to(
-        h2Ref.current,
-        {
-          x: 100,
-        },
-        "animation"
-      );
+    tl.to(
+      h2Ref.current,
+      {
+        x: 100,
+      },
+      "animation"
+    );
 
-      tl.to(
-        h5Ref.current,
-        {
-          x: 100,
-        },
-        "animation"
-      );
+    tl.to(
+      h5Ref.current,
+      {
+        x: 100,
+      },
+      "animation"
+    );
 
-      tl.to(
-        gifRef.current,
-        {
-          width: "90%",
-        },
-        "animation"
-      );
+    tl.to(
+      gifRef.current,
+      {
+        width: "90%",
+      },
+      "animation"
+    );
 
-      const tlHome = gsap.timeline({
-        scrollTrigger: {
-          trigger: homeRef.current,
-          start: "top center",
-        },
-      });
+    const tlHome = gsap.timeline({
+      scrollTrigger: {
+        trigger: homeRef.current,
+        start: "top center",
+      },
+    });
 
-      tlHome.from(".home h1, .home h2, .home h5, .img", {
-        opacity: 0,
-        y: 60,
-        duration: 1,
-        stagger: 0.7,
-        ease: "power3.out",
-      });
-    }
+    tlHome.from(".home h1, .home h2, .home h5, .img", {
+      opacity: 0,
+      y: 60,
+      duration: 1,
+      stagger: 0.7,
+      ease: "power3.out",
+    });
   }, []);
 
   return (
