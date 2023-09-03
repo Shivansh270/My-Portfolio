@@ -32,9 +32,9 @@ const Skills = () => {
       scrollTrigger: {
         trigger: ".home h1",
         scroller: "body",
-        start: "top -450%",
-        end: "top -500%",
-        scrub: 3,
+        start: "top -360%",
+        end: "top -480%",
+        scrub: 4,
       },
     });
 

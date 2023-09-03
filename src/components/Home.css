@@ -43,3 +43,14 @@
   transform: translateX(-50%);
   color: black;
 }
+
+/* Media Query for Mobile Screens */
+@media (max-width: 768px) {
+  .home {
+    position: relative;
+    margin-top: 10vh;
+    left: 6vh;
+    display: flex;
+    flex-direction: column;
+  }
+}

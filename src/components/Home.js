@@ -12,6 +12,8 @@ const Home = () => {
   const gifRef = useRef(null);
 
   useEffect(() => {
+    // const isMobile = window.innerWidth <= 768; // Adjust the breakpoint if needed
+
     gsap.registerPlugin(ScrollTrigger);
 
     const tl = gsap.timeline({
@@ -66,7 +68,7 @@ const Home = () => {
       opacity: 0,
       y: 60,
       duration: 1,
-      stagger: 0.4,
+      stagger: 0.7,
       ease: "power3.out",
     });
   }, []);

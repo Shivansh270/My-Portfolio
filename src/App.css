@@ -12,6 +12,7 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .loading-icon {
@@ -44,11 +45,11 @@ body {
   overflow-x: hidden;
 }
 
-.page1 {
+/* .page1 {
   width: 100%;
   min-height: 100vh;
   z-index: 9;
-}
+} */
 
 .page2 {
   min-height: 80vh;
