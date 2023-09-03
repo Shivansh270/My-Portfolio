@@ -1,8 +1,7 @@
-// Navbar.js
 import React, { useState } from "react";
 import "./Navbar.css";
 import { scrollToSection } from "./utils/scroller";
-import { FiGithub } from "react-icons/fi"; // Import FaBars for mobile menu icon
+import { FiGithub } from "react-icons/fi";
 import { FaBars } from "react-icons/fa";
 import sg from "../assets/sg2.jpg";
 
@@ -24,7 +23,6 @@ const Navbar = () => {
         <h4 onClick={() => scrollToSection("second")}>Skills</h4>
         <h4 onClick={() => scrollToSection("contact")}>Contact</h4>
       </div>
-      {/* Mobile menu */}
       <div className="mobile-menu-icon" onClick={toggleMobileMenu}>
         <FaBars size={30} />
       </div>
@@ -34,7 +32,7 @@ const Navbar = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FiGithub size={30} />
+          <FiGithub />
         </a>
       </div>
     </nav>
